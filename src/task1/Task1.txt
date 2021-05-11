@@ -1,0 +1,13 @@
+
+javaw -XX:+PrintFlagsFinal | find "MaxHeapSize"
+ size_t MaxHeapSize                              = 4278190080                                {product} {ergonomic}
+
+1) MaxHeapSize = 4278190080 - 8 iteration
+java C:\Users\andre\IdeaProjects\AcquaintanceWithGit\src\OOM.java
+java -Xmx4278190080 C:\Users\andre\IdeaProjects\AcquaintanceWithGit\src\OOM.java
+2) X2 8556380160 - 19 iteration
+java -Xmx8556380160  C:\Users\andre\IdeaProjects\AcquaintanceWithGit\src\OOM.java
+3) X3 12834570240 - 29 iteration
+java -Xmx12834570240  C:\Users\andre\IdeaProjects\AcquaintanceWithGit\src\OOM.java
+4) x5 21390950400 - 50 iteration
+java -Xmx21390950400  C:\Users\andre\IdeaProjects\AcquaintanceWithGit\src\OOM.java
